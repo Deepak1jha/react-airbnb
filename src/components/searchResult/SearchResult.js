@@ -8,8 +8,8 @@ export default function SearchResult({
                                      }) {
   return (
     <div className='searchResult'>
-      <img src={img} alt="" />
-      <FavoriteBorderIcon className="searchResult_heart" />
+      <img src={img} alt=""/>
+      <FavoriteBorderIcon className="searchResult_heart"/>
 
       <div className='searchResult_info'>
         <div className="searchResult_infoTop">
@@ -21,7 +21,7 @@ export default function SearchResult({
 
         <div className="searchResult_infoBottom">
           <div className="searchResult_stars">
-            <StarIcon className="searchResult_star" />
+            <StarIcon className="searchResult_star"/>
             <p>
               <strong>{star}</strong>
             </p>
