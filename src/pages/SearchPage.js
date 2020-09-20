@@ -3,7 +3,8 @@ import "../pages/searchPage.css";
 import Button from "@material-ui/core/Button";
 import SearchResult from "../components/searchResult/SearchResult";
 
-export default function SearchPage() {
+export default function SearchPage(props) {
+  console.log(props)
   return(
     <div className="searchPage">
       <div className='searchPage_info'>

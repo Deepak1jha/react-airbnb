@@ -3,10 +3,11 @@ import "../home/Home.css"
 import Banner from "../banner/Banner";
 import Card from "../card/Card";
 
-export default function Home() {
+export default function Home(props) {
+
   return (
     <div className="home">
-      <Banner/>
+      <Banner prop={props}/>
       <div className='home_section'>
         <Card
           src="https://a0.muscache.com/im/pictures/eb9c7c6a-ee33-414a-b1ba-14e8860d59b3.jpg?im_w=720"
@@ -40,7 +41,7 @@ export default function Home() {
         <Card
           src="https://media.nomadicmatt.com/2018/apartment.jpg"
           title="1 Bedroom apartment"
-          description="Superhost with great amenities and a fabolous shopping complex nearby"
+          description="Super-host with great amenities and a fabolous shopping complex nearby"
           price="£70/night"
         />
       </div>

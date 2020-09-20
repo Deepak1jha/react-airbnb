@@ -8,18 +8,16 @@ import SearchPage from "./pages/SearchPage";
 
 function App() {
   return (
-    <div className="app">
       <Router>
         <Header/>
         <Switch>
-          <Route path="/"
-                 render={props => <SearchPage {...props} />}/>
-          <Route path="/search"
-                 render={props => <SearchPage {...props} />}/>
+          <Route path="/" exact
+                 render={props => <Home {...props} />}/>
+          <Route path="/search" exact
+                 component={SearchPage}/>
         </Switch>
         <Footer/>
       </Router>
-    </div>
   );
 }
 
